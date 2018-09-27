@@ -24,33 +24,38 @@ Reflection describes the current pipeline, identifies its potential shortcomings
 
 [//]: # (Image References)
 
-[pipe1]: ./pipelines/solidWhiteRight_1_grayscale.jpg "Grayscale"
-[pipe2]: ./pipelines/solidWhiteRight_2_blurred.jpg "Gaussian Blur"
-[pipe3]: ./pipelines/solidWhiteRight_3_col_sel.jpg "Color Selection"
-[pipe4]: ./pipelines/solidWhiteRight_4_masked.jpg "Region of Interest"
-[pipe5]: ./pipelines/solidWhiteRight_5_canny.jpg "Canny Edge"
-[pipe6]: ./pipelines/solidWhiteRight_6_houghed.jpg "Hough Transform"
-[pipe7]: ./pipelines/solidWhiteRight_7_lines.jpg "Draw Lines"
-[pipe8]: ./pipelines/solidWhiteRight_8_final.jpg "Weighted Image"
+[pipe1]: ./pipelines/whiteCarLaneSwitch_0_original.jpg "Getting Image Source"
+[pipe2]: ./pipelines/whiteCarLaneSwitch_1_masked.jpg "Region Masking"
+[pipe3]: ./pipelines/whiteCarLaneSwitch_2_grayscale.jpg "Grayscale"
+[pipe4]: ./pipelines/whiteCarLaneSwitch_3_blurred.jpg.jpg "Gaussian Blur"
+[pipe5]: ./pipelines/whiteCarLaneSwitch_4_col_sel.jpg "Color Selection"
+[pipe6]: ./pipelines/whiteCarLaneSwitch_5_canny.jpg "Canny Edge"
+[pipe7]: ./pipelines/whiteCarLaneSwitch_6_houghed.jpg "Hough Transform"
+[pipe8]: ./pipelines/whiteCarLaneSwitch_7_lines.jpg "Draw Lines"
+[pipe9]: ./pipelines/whiteCarLaneSwitch_8_final.jpg "Weighted Image"
 
 --- 
 
 ## My Pipelines
 
-My pipeline consisted of 8 steps.
-* **Grayscale.** This will return an image with only one color channel.
+My pipeline consists of these steps.
+* **Getting Image Source.** This will return original image.
+
+![alt text][pipe0]
+
+* **Region Masking.** Applies an Image Masking. Only keeps the region of the image defined by the polygon formed from vertices. The rest of the image is set to black.
 
 ![alt text][pipe1]
 
-* **Gaussian Blur.** Applies a Gaussian Noise Kernel.
+* **Grayscale.** This will return an image with only one-color channel.
 
 ![alt text][pipe2]
 
-* **Color Selection.** Applies the Color Selection.
+* **Gaussian Blur.** Applies a Gaussian Noise Kernel.
 
 ![alt text][pipe3]
 
-* **Region of Interest.** Applies an Image Masking. Only keeps the region of the image defined by the polygon formed from vertices. The rest of the image is set to black.
+* **Color Selection.** Applies the Color Selection.
 
 ![alt text][pipe4]
 
@@ -73,10 +78,12 @@ My pipeline consisted of 8 steps.
 ## Potential Shortcomings
 
 There are several potential shortcomings.
-* Potential shortcoming would happen when lanes meet sharp-turn. Need to fixing the sloope algorithm.
+* Potential shortcoming would happen when lanes meet sharp-turn. Need to be fixing the slope algorithm. 
 * Another shortcoming would happen if the line not solid, and the color not consistent.
-* Another shortcoming would happen if the line covered with shadow on one side. For example if left line not covered, and right line covered, then only left line that detected by this algorithm.
-* And one more shortcoming would happen if the resolution of Images/Videos different (not standardized). Because the lines that created, using fixed coordinates. 
+* Another shortcoming would happen if the line not visible, maybe there are object covering it.
+* Another shortcoming would happen if the line covered with shadow on one side. For example, if left line not covered, and right line covered, then only left line that detected by this algorithm.
+* And one more shortcoming would happen if the resolution of Images/Videos different (not standardized). Because the lines that created, using fixed coordinates.
+
 
 
 ## Possible Improvements
@@ -84,6 +91,13 @@ There are several potential shortcomings.
 There are several possible improvements.
 * Possible improvement would be to creating a historical data of slope. So we can predict next slope depend on before data. And then we can using statistics for searching the slope, not simple just like this, only counting the average value.
 * Another possible improvement would be to create dynamic algorithm for drawing a lines. Possibly by using shape of the image, and then proportionally using that for drawing a lines.
+* Or maybe using more Advanced Image Processing techniques.
+
+
+## Challenge
+
+I try the Challenge video and adding one my own video. Very Excited!
+
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
