@@ -23,16 +23,15 @@ Reflection
 Reflection describes the current pipeline, identifies its potential shortcomings and suggests possible improvements.
 
 [//]: # (Image References)
-
-[pipe1]: ./pipelines/whiteCarLaneSwitch_0_original.jpg "Getting Image Source"
-[pipe2]: ./pipelines/whiteCarLaneSwitch_1_masked.jpg "Region Masking"
-[pipe3]: ./pipelines/whiteCarLaneSwitch_2_grayscale.jpg "Grayscale"
-[pipe4]: ./pipelines/whiteCarLaneSwitch_3_blurred.jpg "Gaussian Blur"
-[pipe5]: ./pipelines/whiteCarLaneSwitch_4_col_sel.jpg "Color Selection"
-[pipe6]: ./pipelines/whiteCarLaneSwitch_5_canny.jpg "Canny Edge"
-[pipe7]: ./pipelines/whiteCarLaneSwitch_6_houghed.jpg "Hough Transform"
-[pipe8]: ./pipelines/whiteCarLaneSwitch_7_lines.jpg "Draw Lines"
-[pipe9]: ./pipelines/whiteCarLaneSwitch_8_final.jpg "Weighted Image"
+[pipe0]: ./pipelines/whiteCarLaneSwitch_0_original.jpg "Getting Image Source"
+[pipe1]: ./pipelines/whiteCarLaneSwitch_1_masked.jpg "Region Masking"
+[pipe2]: ./pipelines/whiteCarLaneSwitch_2_grayscale.jpg "Grayscale"
+[pipe3]: ./pipelines/whiteCarLaneSwitch_3_blurred.jpg "Gaussian Blur"
+[pipe4]: ./pipelines/whiteCarLaneSwitch_4_col_sel.jpg "Color Selection"
+[pipe5]: ./pipelines/whiteCarLaneSwitch_5_canny.jpg "Canny Edge"
+[pipe6]: ./pipelines/whiteCarLaneSwitch_6_houghed.jpg "Hough Transform"
+[pipe7]: ./pipelines/whiteCarLaneSwitch_7_lines.jpg "Draw Lines"
+[pipe8]: ./pipelines/whiteCarLaneSwitch_8_final.jpg "Weighted Image"
 
 --- 
 
