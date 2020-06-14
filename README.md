@@ -90,7 +90,7 @@ There are several potential shortcomings.
 There are several possible improvements.
 * Possible improvement would be to creating a historical data of slope. So we can predict next slope depend on before data. And then we can using statistics for searching the slope, not simple just like this, only counting the average value.
 * Another possible improvement would be to create dynamic algorithm for drawing a lines. Possibly by using shape of the image, and then proportionally using that for drawing a lines.
-* Or maybe using more Advanced Image Processing techniques.
+* Or maybe adding more Advanced Image Processing techniques.
 
 
 ## Challenge
